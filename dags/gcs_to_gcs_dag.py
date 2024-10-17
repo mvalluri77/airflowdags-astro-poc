@@ -35,7 +35,7 @@ with DAG(dag_id='GCS_to_GCS',
             source_object='raw/*.csv',
             destination_bucket='sample_bucket21',
             destination_object='copied_data/2017/',
-            gcp_conn_id=google_cloud_conn_id
+            gcp_conn_id='google_cloud_conn_id'
         )
 
 # Dummy end task   
